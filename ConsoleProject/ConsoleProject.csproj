@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DIP.BLL\DIP.BLL.csproj" />
+    <ProjectReference Include="..\DIP.DAL\DIP.DAL.csproj" />
+    <ProjectReference Include="..\DIP.Framework\DIP.Framework.csproj" />
+    <ProjectReference Include="..\DIP.IDAL\DIP.IDAL.csproj" />
+    <ProjectReference Include="..\DIP.Service\DIP.Service.csproj" />
+  </ItemGroup>
+
+</Project>

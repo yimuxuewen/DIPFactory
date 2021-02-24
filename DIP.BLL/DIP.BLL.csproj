@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DIP.Framework\DIP.Framework.csproj" />
+    <ProjectReference Include="..\DIP.IBLL\DIP.IBLL.csproj" />
+    <ProjectReference Include="..\DIP.IDAL\DIP.IDAL.csproj" />
+    <ProjectReference Include="..\DIP.Interface\DIP.Interface.csproj" />
+  </ItemGroup>
+
+</Project>
